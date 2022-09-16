@@ -1,0 +1,10 @@
+{
+  "name": "videogata-plugin-typings",
+  "version": "1.0.0",
+  "description": "Typings for the VideoGata Plugin API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {},
+  "author": "Elijah Green",
+  "license": "ISC"
+}
