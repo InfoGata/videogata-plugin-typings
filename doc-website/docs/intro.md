@@ -7,4 +7,4 @@ sidebar_position: 1
 
 ### About
 
-VideoGata is plugin based video player.
+VideoGata is a plugin based video player.
