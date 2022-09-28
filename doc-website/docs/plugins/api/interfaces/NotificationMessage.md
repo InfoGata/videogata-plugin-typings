@@ -18,4 +18,4 @@ ___
 
 ### type
 
-• `Optional` **type**: ``"default"`` \| ``"success"`` \| ``"error"`` \| ``"warning"`` \| ``"info"``
+• `Optional` **type**: ``"error"`` \| ``"default"`` \| ``"success"`` \| ``"warning"`` \| ``"info"``
