@@ -43,18 +43,30 @@ declare global {
     createNotification(notification: NotificationMessage): Promise<void>;
     /**
      * Callback method to return search results on `/search`
+     *
+     * @remarks This method must be set for the plugin to show on the
+     * `/search` page
      */
     onSearchAll?(request: SearchRequest): Promise<SearchAllResult>;
     /**
      * Callback method to return video search results on `/search`
+     *
+     * @remarks This method must be set for video pagination to work on the
+     * `/search` page
      */
     onSearchVideos?(request: SearchRequest): Promise<SearchVideoResult>;
     /**
      * Callback method to return playlist search results on `/search`
+     *
+     * @remarks This method must be set for playlist pagination to work on the
+     * `/search` page
      */
     onSearchPlaylists?(request: SearchRequest): Promise<SearchPlaylistResult>;
     /**
      * Callback method to return playlist search channels on `/search`
+     *
+     * @remarks This method must be set for channel pagination to work on the
+     * `/search` page
      */
     onSearchChannels?(request: SearchRequest): Promise<SearchChannelResult>;
     /**

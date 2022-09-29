@@ -252,6 +252,11 @@ ___
 
 Callback method to return search results on `/search`
 
+**`Remarks`**
+
+This method must be set for the plugin to show on the
+`/search` page
+
 #### Parameters
 
 | Name | Type |
@@ -269,6 +274,11 @@ ___
 ▸ `Optional` **onSearchChannels**(`request`): `Promise`<[`SearchChannelResult`](SearchChannelResult.md)\>
 
 Callback method to return playlist search channels on `/search`
+
+**`Remarks`**
+
+This method must be set for channel pagination to work on the
+`/search` page
 
 #### Parameters
 
@@ -288,6 +298,11 @@ ___
 
 Callback method to return playlist search results on `/search`
 
+**`Remarks`**
+
+This method must be set for playlist pagination to work on the
+`/search` page
+
 #### Parameters
 
 | Name | Type |
@@ -305,6 +320,11 @@ ___
 ▸ `Optional` **onSearchVideos**(`request`): `Promise`<[`SearchVideoResult`](SearchVideoResult.md)\>
 
 Callback method to return video search results on `/search`
+
+**`Remarks`**
+
+This method must be set for video pagination to work on the
+`/search` page
 
 #### Parameters
 
