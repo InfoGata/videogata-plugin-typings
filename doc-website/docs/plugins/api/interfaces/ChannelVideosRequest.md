@@ -16,6 +16,6 @@ Id from third party service this was retrieved from.
 
 ___
 
-### page
+### pageInfo
 
-• `Optional` **page**: [`PageInfo`](PageInfo.md)
+• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)

@@ -137,7 +137,7 @@ declare global {
     /**
      * Current page to search
      */
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface PluginInfo {
@@ -282,7 +282,7 @@ declare global {
   }
 
   interface UserPlaylistRequest {
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface SearchPlaylistResult {
@@ -296,7 +296,7 @@ declare global {
      * Determine whether this a private playlist only associated with a user.
      */
     isUserPlaylist: boolean;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface PlaylistVideosResult extends SearchVideoResult {
@@ -327,7 +327,7 @@ declare global {
      * Id from third party service this was retrieved from.
      */
     apiId?: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface ChannelVideosResult extends SearchVideoResult {
@@ -336,7 +336,7 @@ declare global {
 
   interface SearchChannelResult {
     items: Channel[];
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface GetVideoRequest {
@@ -345,18 +345,18 @@ declare global {
 
   interface VideoCommentsRequest {
     apiId?: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface VideoCommentsResult {
     comments: VideoComment[];
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface CommentReplyRequest {
     commentApiId: string;
     videoApiId?: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface VideoComment {
