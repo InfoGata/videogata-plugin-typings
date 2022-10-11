@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "VideoGata",
   tagline: "Plugin based video",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://infogata.github.io",
+  baseUrl: "/videogata-plugin-typings/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "InfoGata", // Usually your GitHub org/user name.
-  projectName: "videogata", // Usually your repo name.
+  projectName: "videogata-plugin-typings", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -37,8 +37,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl:
+            "https://github.com/InfoGata/videogata-plugin-typings/tree/master/docs",
         },
         blog: false,
         theme: {
@@ -59,7 +59,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/InfoGata/videogata-plugin-typings",
             label: "GitHub",
             position: "right",
           },
@@ -77,25 +77,21 @@ const config = {
               },
             ],
           },
-          //{
-          //  title: "Community",
-          //  items: [
-          //    {
-          //      label: "Discord",
-          //      href: "https://discordapp.com/invite/docusaurus",
-          //    },
-          //    {
-          //      label: "Twitter",
-          //      href: "https://twitter.com/docusaurus",
-          //    },
-          //  ],
-          //},
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Twitter",
+                href: "https://twitter.com/info_gata",
+              },
+            ],
+          },
           {
             title: "More",
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/InfoGata/videogata-plugin-typings",
               },
             ],
           },
