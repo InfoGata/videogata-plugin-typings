@@ -1,5 +1,5 @@
 {
-  "name": "videogata-plugin-typings",
+  "name": "@infogata/videogata-plugin-typings",
   "homepage": "https://github.com/InfoGata/videogata-plugin-typings",
   "repository": {
     "type": "git",
@@ -10,15 +10,17 @@
   },
   "version": "1.0.1",
   "description": "Typings for the VideoGata Plugin API",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "",
   "scripts": {
-    "test": ""
+    "test": "tsc"
   },
   "author": "Elijah Green",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
