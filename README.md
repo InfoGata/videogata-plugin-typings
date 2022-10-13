@@ -2,7 +2,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@infogata/videogata-plugin-typings)](https://www.npmjs.com/package/@infogata/videogata-plugin-typings)
 
-Types for [videogata](https://www.videogata.com) plugins.
+Types for [videogata](https://github.com/InfoGata/videogata) plugins.
 
 ## Installation
 
