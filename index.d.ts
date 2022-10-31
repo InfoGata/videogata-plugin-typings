@@ -124,9 +124,13 @@ declare global {
     channels?: SearchChannelResult;
   }
 
-  interface SearchVideoResult {
-    items: Video[];
+  interface SearchResult {
+    filterInfo?: FilterInfo;
     pageInfo?: PageInfo;
+  }
+
+  interface SearchVideoResult extends SearchResult {
+    items: Video[];
   }
 
   interface SearchRequest {
@@ -135,9 +139,13 @@ declare global {
      */
     query: string;
     /**
-     * Current page to search
+     * Current page to search.
      */
     pageInfo?: PageInfo;
+    /**
+     * Current filters to search based on.
+     */
+    filterInfo?: FilterInfo;
   }
 
   interface PluginInfo {
@@ -285,9 +293,8 @@ declare global {
     pageInfo?: PageInfo;
   }
 
-  interface SearchPlaylistResult {
+  interface SearchPlaylistResult extends SearchResult {
     items: PlaylistInfo[];
-    pageInfo?: PageInfo;
   }
 
   interface PlaylistVideoRequest {
@@ -334,9 +341,8 @@ declare global {
     channel?: Channel;
   }
 
-  interface SearchChannelResult {
+  interface SearchChannelResult extends SearchResult {
     items: Channel[];
-    pageInfo?: PageInfo;
   }
 
   interface GetVideoRequest {
@@ -422,7 +428,7 @@ declare global {
      */
     resultsPerPage: number;
     /**
-     * Current
+     * Current offset
      */
     offset: number;
     /**
@@ -433,6 +439,45 @@ declare global {
      * Optional string containing information about previous page. For example, a url to the next page.
      */
     prevPage?: string;
+  }
+
+  /**
+   * Information used for filtering in search requests.
+   */
+  interface FilterInfo {
+    filters: Filter[];
+  }
+
+  type FilterType = "radio" | "select" | "text";
+
+  interface Filter {
+    /**
+     * Unique identifier of filter.
+     */
+    id: string;
+    /**
+     * Name of filter that will be displayed to user.
+     */
+    displayName: string;
+    /**
+     * Type of filter used to determine if filter will be displayed
+     * as a radio field, select tag, or text field.
+     */
+    type: FilterType;
+    /**
+     * Value that this filter is set to.
+     */
+    value?: string;
+    /**
+     * Selectable options for filter used when filter
+     * is type "radio" or "select"
+     */
+    options?: FilterOption[];
+  }
+
+  interface FilterOption {
+    displayName: string;
+    value: string;
   }
 }
 

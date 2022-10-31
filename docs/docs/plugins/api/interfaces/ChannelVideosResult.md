@@ -20,6 +20,16 @@ custom_edit_url: null
 
 ___
 
+### filterInfo
+
+• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+
+#### Inherited from
+
+[SearchVideoResult](SearchVideoResult.md).[filterInfo](SearchVideoResult.md#filterinfo)
+
+___
+
 ### items
 
 • **items**: [`Video`](Video.md)[]

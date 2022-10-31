@@ -13,6 +13,9 @@ custom_edit_url: null
 - [ChannelVideosRequest](interfaces/ChannelVideosRequest.md)
 - [ChannelVideosResult](interfaces/ChannelVideosResult.md)
 - [CommentReplyRequest](interfaces/CommentReplyRequest.md)
+- [Filter](interfaces/Filter.md)
+- [FilterInfo](interfaces/FilterInfo.md)
+- [FilterOption](interfaces/FilterOption.md)
 - [GetVideoRequest](interfaces/GetVideoRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
@@ -26,6 +29,7 @@ custom_edit_url: null
 - [SearchChannelResult](interfaces/SearchChannelResult.md)
 - [SearchPlaylistResult](interfaces/SearchPlaylistResult.md)
 - [SearchRequest](interfaces/SearchRequest.md)
+- [SearchResult](interfaces/SearchResult.md)
 - [SearchVideoResult](interfaces/SearchVideoResult.md)
 - [UserPlaylistRequest](interfaces/UserPlaylistRequest.md)
 - [Video](interfaces/Video.md)
@@ -33,6 +37,12 @@ custom_edit_url: null
 - [VideoCommentsRequest](interfaces/VideoCommentsRequest.md)
 - [VideoCommentsResult](interfaces/VideoCommentsResult.md)
 - [VideoSource](interfaces/VideoSource.md)
+
+## Type Aliases
+
+### FilterType
+
+Ƭ **FilterType**: ``"radio"`` \| ``"select"`` \| ``"text"``
 
 ## Variables
 

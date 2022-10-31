@@ -20,7 +20,7 @@ ___
 
 • **offset**: `number`
 
-Current
+Current offset
 
 ___
 
