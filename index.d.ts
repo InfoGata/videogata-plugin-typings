@@ -11,6 +11,10 @@ declare global {
      */
     getCorsProxy(): Promise<string | undefined>;
     /**
+     * Get locale configured in settings.
+     */
+    getLocale(): Promise<string>;
+    /**
      * Used to signal that current video embedded in player has ended.
      *
      * @remarks
