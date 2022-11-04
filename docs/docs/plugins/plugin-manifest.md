@@ -17,7 +17,8 @@ Example:
   "script": "dist/script.js",
   "options": "dist/options.html",
   "player": "dist/player.html",
-  "updateUrl": "https://example.com/manifest.json"
+  "updateUrl": "https://example.com/manifest.json",
+  "homepage": "https://example.com"
 }
 ```
 
@@ -52,3 +53,7 @@ Optional HTML file to show embedded videos rather than using VideoGata's default
 ## updateUrl?: string
 
 Optional url to get future updated versions of the manifest.json file.
+
+## hompage?: string
+
+Optional URL for the plugin's home page.

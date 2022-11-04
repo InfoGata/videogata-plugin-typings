@@ -170,6 +170,10 @@ declare global {
      */
     version?: string;
     /**
+     * URL for the plugin's home page.
+     */
+    homepage?: string;
+    /**
      * Description of plugin
      */
     description?: string;
