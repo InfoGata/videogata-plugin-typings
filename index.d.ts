@@ -34,9 +34,19 @@ declare global {
      */
     getPlaylists(): Promise<Playlist[]>;
     /**
+     * Get the users's current playlists metadata without tracks.
+     */
+    getPlaylistsInfo(): Promise<PlaylistInfo[]>;
+    /**
      * Adds or updates playlists. Playlists with the same id are updated.
      */
     addPlaylists(playlists: Playlist[]): Promise<void>;
+    /**
+     * Adds videos to a playlist
+     * @param playlistId id of playlist
+     * @param videos Videos being added to playlist
+     */
+    addVideosToPlaylist(playlistId: string, videos: Video[]): Promise<void>;
     /**
      * Get the current plugin's id.
      */

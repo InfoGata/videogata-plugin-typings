@@ -26,6 +26,25 @@ Adds or updates playlists. Playlists with the same id are updated.
 
 ___
 
+### addVideosToPlaylist
+
+▸ **addVideosToPlaylist**(`playlistId`, `videos`): `Promise`<`void`\>
+
+Adds videos to a playlist
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `playlistId` | `string` | id of playlist |
+| `videos` | [`Video`](Video.md)[] | Videos being added to playlist |
+
+#### Returns
+
+`Promise`<`void`\>
+
+___
+
 ### createNotification
 
 ▸ **createNotification**(`notification`): `Promise`<`void`\>
@@ -93,6 +112,18 @@ Get the user's current playlists.
 #### Returns
 
 `Promise`<[`Playlist`](Playlist.md)[]\>
+
+___
+
+### getPlaylistsInfo
+
+▸ **getPlaylistsInfo**(): `Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
+
+Get the users's current playlists metadata without tracks.
+
+#### Returns
+
+`Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
 
 ___
 
