@@ -130,6 +130,16 @@ declare global {
      * Callback method to return items to display on Home page.
      */
     onGetTopItems?(): Promise<SearchAllResult>;
+    /**
+     * Callback method that checks to see if url can be parsed by plugin
+     * so that onLookupPlaylistUrl returns results
+     */
+    onCanParseUrl?(url: string, type: ParseUrlType): Promise<boolean>;
+    /**
+     * Callback method that takes a url and returns a playlist.
+     * Used on the `/playlists` page.
+     */
+    onLookupPlaylistUrl?(url: string): Promise<Playlist>;
   }
 
   interface SearchAllResult {
@@ -497,6 +507,8 @@ declare global {
     displayName: string;
     value: string;
   }
+
+  type ParseUrlType = "playlist";
 }
 
 export {};

@@ -44,6 +44,12 @@ custom_edit_url: null
 
 Ƭ **FilterType**: ``"radio"`` \| ``"select"`` \| ``"text"``
 
+___
+
+### ParseUrlType
+
+Ƭ **ParseUrlType**: ``"playlist"``
+
 ## Variables
 
 ### application

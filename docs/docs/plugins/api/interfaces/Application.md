@@ -169,6 +169,26 @@ Open user dialog for user to optionally install plugins
 
 ___
 
+### onCanParseUrl
+
+▸ `Optional` **onCanParseUrl**(`url`, `type`): `Promise`<`boolean`\>
+
+Callback method that checks to see if url can be parsed by plugin
+so that onLookupPlaylistUrl returns results
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+| `type` | ``"playlist"`` |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
 ### onGetChannelVideos
 
 ▸ `Optional` **onGetChannelVideos**(`request`): `Promise`<[`ChannelVideosResult`](ChannelVideosResult.md)\>
@@ -286,6 +306,25 @@ Callback method to return video comments.
 #### Returns
 
 `Promise`<[`VideoCommentsResult`](VideoCommentsResult.md)\>
+
+___
+
+### onLookupPlaylistUrl
+
+▸ `Optional` **onLookupPlaylistUrl**(`url`): `Promise`<[`Playlist`](Playlist.md)\>
+
+Callback method that takes a url and returns a playlist.
+Used on the `/playlists` page.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+
+#### Returns
+
+`Promise`<[`Playlist`](Playlist.md)\>
 
 ___
 
