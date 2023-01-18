@@ -3,6 +3,14 @@ declare global {
 
   interface Application {
     /**
+     * Make a networkRequest from parent AudioGata frame rather from plugin frame.
+     */
+    networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
+    /**
+     * Used to determine whether requests from networkRequest are restricted by CORs.
+     */
+    isNetworkRequestCorsDisabled(): Promise<boolean>;
+    /**
      * Sends a message to ui frames like `options` and `player` set in `manifest.json`.
      */
     postUiMessage(msg: any): Promise<void>;

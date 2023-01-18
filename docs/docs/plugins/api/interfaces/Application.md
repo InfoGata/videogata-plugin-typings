@@ -169,6 +169,37 @@ Open user dialog for user to optionally install plugins
 
 ___
 
+### isNetworkRequestCorsDisabled
+
+▸ **isNetworkRequestCorsDisabled**(): `Promise`<`boolean`\>
+
+Used to determine whether requests from networkRequest are restricted by CORs.
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
+### networkRequest
+
+▸ **networkRequest**(`input`, `init?`): `Promise`<`Response`\>
+
+Make a networkRequest from parent AudioGata frame rather from plugin frame.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | `RequestInfo` |
+| `init?` | `RequestInit` |
+
+#### Returns
+
+`Promise`<`Response`\>
+
+___
+
 ### onCanParseUrl
 
 ▸ `Optional` **onCanParseUrl**(`url`, `type`): `Promise`<`boolean`\>
