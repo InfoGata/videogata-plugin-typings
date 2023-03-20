@@ -82,7 +82,7 @@ ___
 
 • `Optional` **originalUrl**: `string`
 
-Url where this video originally came from
+Url that points to third party service where to video was retrieved from
 
 ___
 

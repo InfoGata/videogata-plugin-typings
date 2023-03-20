@@ -40,6 +40,14 @@ Name of Channel
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to channel was retrieved from
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`

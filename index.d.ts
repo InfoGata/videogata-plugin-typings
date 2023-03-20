@@ -278,7 +278,7 @@ declare global {
      */
     uploadDate?: string;
     /**
-     * Url where this video originally came from
+     * Url that points to third party service where to video was retrieved from
      */
     originalUrl?: string;
   }
@@ -319,6 +319,10 @@ declare global {
      * Plugin Id of plugin where Playlist was retrieved from. Set by VideoGata.
      */
     pluginId?: string;
+    /**
+     * Url that points to third party service where to playlist was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface Playlist extends PlaylistInfo {
@@ -367,6 +371,10 @@ declare global {
      * Plugin Id of plugin where Channel was retrieved from. Set by VideoGata.
      */
     pluginId?: string;
+    /**
+     * Url that points to third party service where to channel was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface ChannelVideosRequest {
