@@ -148,6 +148,10 @@ declare global {
      * Used on the `/playlists` page.
      */
     onLookupPlaylistUrl?(url: string): Promise<Playlist>;
+    /**
+     * Callback method that takes urls and returns videos.
+     */
+    onLookupVideoUrls?(urls: string[]): Promise<Video[]>;
   }
 
   interface SearchAllResult {
@@ -528,7 +532,7 @@ declare global {
     value: string;
   }
 
-  type ParseUrlType = "playlist";
+  type ParseUrlType = "playlist" | "video";
 }
 
 export {};

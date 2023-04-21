@@ -212,7 +212,7 @@ so that onLookupPlaylistUrl returns results
 | Name | Type |
 | :------ | :------ |
 | `url` | `string` |
-| `type` | ``"playlist"`` |
+| `type` | [`ParseUrlType`](../#parseurltype) |
 
 #### Returns
 
@@ -356,6 +356,24 @@ Used on the `/playlists` page.
 #### Returns
 
 `Promise`<[`Playlist`](Playlist.md)\>
+
+___
+
+### onLookupVideoUrls
+
+▸ `Optional` **onLookupVideoUrls**(`urls`): `Promise`<[`Video`](Video.md)[]\>
+
+Callback method that takes urls and returns videos.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `urls` | `string`[] |
+
+#### Returns
+
+`Promise`<[`Video`](Video.md)[]\>
 
 ___
 

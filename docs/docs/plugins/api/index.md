@@ -48,7 +48,7 @@ ___
 
 ### ParseUrlType
 
-Ƭ **ParseUrlType**: ``"playlist"``
+Ƭ **ParseUrlType**: ``"playlist"`` \| ``"track"``
 
 ## Variables
 
