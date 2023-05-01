@@ -30,6 +30,12 @@ ___
 
 ___
 
+### isLive
+
+• `Optional` **isLive**: `boolean`
+
+___
+
 ### items
 
 • **items**: [`Video`](Video.md)[]

@@ -16,6 +16,7 @@ custom_edit_url: null
 - [Filter](interfaces/Filter.md)
 - [FilterInfo](interfaces/FilterInfo.md)
 - [FilterOption](interfaces/FilterOption.md)
+- [GetLiveVideoRequest](interfaces/GetLiveVideoRequest.md)
 - [GetVideoRequest](interfaces/GetVideoRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)

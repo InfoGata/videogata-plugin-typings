@@ -48,7 +48,7 @@ ___
 
 ### duration
 
-• **duration**: `number`
+• `Optional` **duration**: `number`
 
 Length of video in seconds
 

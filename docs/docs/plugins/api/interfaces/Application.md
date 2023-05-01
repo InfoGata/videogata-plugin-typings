@@ -256,6 +256,24 @@ Callback method to return replies to a VideoComment.
 
 ___
 
+### onGetLiveVideo
+
+▸ `Optional` **onGetLiveVideo**(`requeset`): `Promise`<`undefined` \| [`Video`](Video.md)\>
+
+Callback method to get live video information. Used on `/plugins/:pluginId/channels/:apiId/live`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requeset` | [`GetLiveVideoRequest`](GetLiveVideoRequest.md) |
+
+#### Returns
+
+`Promise`<`undefined` \| [`Video`](Video.md)\>
+
+___
+
 ### onGetPlaylistVideos
 
 ▸ `Optional` **onGetPlaylistVideos**(`request`): `Promise`<[`PlaylistVideosResult`](PlaylistVideosResult.md)\>

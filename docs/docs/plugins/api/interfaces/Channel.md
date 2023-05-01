@@ -32,6 +32,14 @@ Images associated with Channel
 
 ___
 
+### isLive
+
+• `Optional` **isLive**: `boolean`
+
+Indicates whether this channel is currently live streaming.
+
+___
+
 ### name
 
 • **name**: `string`

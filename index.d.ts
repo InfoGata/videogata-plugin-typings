@@ -96,6 +96,10 @@ declare global {
      */
     onGetVideo?(request: GetVideoRequest): Promise<Video>;
     /**
+     * Callback method to get live video information. Used on `/plugins/:pluginId/channels/:apiId/live`
+     */
+    onGetLiveVideo?(requeset: GetLiveVideoRequest): Promise<Video | undefined>;
+    /**
      * Callback method that receives parent.postMessage requests from UI frames.
      */
     onUiMessage?(message: any): Promise<void>;
@@ -246,7 +250,7 @@ declare global {
     /**
      * Length of video in seconds
      */
-    duration: number;
+    duration?: number;
     /**
      * Plugin Id of plugin where Video was retrieved from. Set by VideoGata.
      */
@@ -379,6 +383,10 @@ declare global {
      * Url that points to third party service where to channel was retrieved from
      */
     originalUrl?: string;
+    /**
+     * Indicates whether this channel is currently live streaming.
+     */
+    isLive?: boolean;
   }
 
   interface ChannelVideosRequest {
@@ -391,6 +399,7 @@ declare global {
 
   interface ChannelVideosResult extends SearchVideoResult {
     channel?: Channel;
+    isLive?: boolean;
   }
 
   interface SearchChannelResult extends SearchResult {
@@ -399,6 +408,10 @@ declare global {
 
   interface GetVideoRequest {
     apiId: string;
+  }
+
+  interface GetLiveVideoRequest {
+    channelApiId: string;
   }
 
   interface VideoCommentsRequest {
