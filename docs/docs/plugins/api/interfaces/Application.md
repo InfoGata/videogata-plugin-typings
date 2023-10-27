@@ -292,6 +292,24 @@ Callback method that gets a playlist's videos.  Used on `/plugins/:pluginId/play
 
 ___
 
+### onGetSearchSuggestions
+
+▸ **onGetSearchSuggestions**(`request`): `Promise`<`string`[]\>
+
+Callback method that takes a query and returns search suggestions
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`GetSearchSuggestionsRequest`](GetSearchSuggestionsRequest.md) |
+
+#### Returns
+
+`Promise`<`string`[]\>
+
+___
+
 ### onGetTopItems
 
 ▸ `Optional` **onGetTopItems**(): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>

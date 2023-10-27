@@ -156,6 +156,12 @@ declare global {
      * Callback method that takes urls and returns videos.
      */
     onLookupVideoUrls?(urls: string[]): Promise<Video[]>;
+    /**
+     * Callback method that takes a query and returns search suggestions
+     */
+    onGetSearchSuggestions(
+      request: GetSearchSuggestionsRequest
+    ): Promise<string[]>;
   }
 
   interface SearchAllResult {
@@ -546,6 +552,10 @@ declare global {
   }
 
   type ParseUrlType = "playlist" | "video";
+
+  interface GetSearchSuggestionsRequest {
+    query: string;
+  }
 }
 
 export {};
