@@ -234,6 +234,10 @@ declare global {
      * on options page.
      */
     optionsSameOrigin?: boolean;
+    /**
+     * Plugin's manifest
+     */
+    manifest?: Manifest;
   }
 
   interface Video {
@@ -555,6 +559,23 @@ declare global {
 
   interface GetSearchSuggestionsRequest {
     query: string;
+  }
+
+  interface Manifest {
+    name: string;
+    script: string;
+    id?: string;
+    version?: string;
+    description?: string;
+    options?: string | ManifestOptions;
+    player?: string;
+    updateUrl?: string;
+    homepage?: string;
+  }
+
+  interface ManifestOptions {
+    page: string;
+    sameOrigin?: boolean;
   }
 }
 

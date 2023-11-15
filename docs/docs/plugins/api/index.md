@@ -20,6 +20,8 @@ custom_edit_url: null
 - [GetSearchSuggestionsRequest](interfaces/GetSearchSuggestionsRequest.md)
 - [GetVideoRequest](interfaces/GetVideoRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
+- [Manifest](interfaces/Manifest.md)
+- [ManifestOptions](interfaces/ManifestOptions.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
 - [PageInfo](interfaces/PageInfo.md)
 - [Playlist](interfaces/Playlist.md)
