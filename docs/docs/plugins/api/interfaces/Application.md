@@ -169,6 +169,19 @@ Open user dialog for user to optionally install plugins
 
 ___
 
+### isLoggedIn
+
+▸ **isLoggedIn**(): `Promise`<`boolean`\>
+
+Returns true if thec user has been to logged in based in what is in
+authentication in the manifest
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
 ### isNetworkRequestCorsDisabled
 
 ▸ **isNetworkRequestCorsDisabled**(): `Promise`<`boolean`\>
@@ -294,7 +307,7 @@ ___
 
 ### onGetSearchSuggestions
 
-▸ **onGetSearchSuggestions**(`request`): `Promise`<`string`[]\>
+▸ `Optional` **onGetSearchSuggestions**(`request`): `Promise`<`string`[]\>
 
 Callback method that takes a query and returns search suggestions
 
@@ -319,6 +332,24 @@ Callback method to return items to display on Home page.
 #### Returns
 
 `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+
+___
+
+### onGetUserChannels
+
+▸ **onGetUserChannels**(`request`): `Promise`<[`SearchChannelResult`](SearchChannelResult.md)\>
+
+Callback method that gets a user's subscribed channels.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`UserChannelRequest`](UserChannelRequest.md) |
+
+#### Returns
+
+`Promise`<[`SearchChannelResult`](SearchChannelResult.md)\>
 
 ___
 
@@ -410,6 +441,30 @@ Callback method that takes urls and returns videos.
 #### Returns
 
 `Promise`<[`Video`](Video.md)[]\>
+
+___
+
+### onPostLogin
+
+▸ `Optional` **onPostLogin**(): `Promise`<`void`\>
+
+Callback method that is called after the user has logged in
+
+#### Returns
+
+`Promise`<`void`\>
+
+___
+
+### onPostLogout
+
+▸ `Optional` **onPostLogout**(): `Promise`<`void`\>
+
+Callback method that is called after the user has logged out
+
+#### Returns
+
+`Promise`<`void`\>
 
 ___
 

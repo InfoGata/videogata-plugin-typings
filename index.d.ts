@@ -64,6 +64,11 @@ declare global {
      */
     createNotification(notification: NotificationMessage): Promise<void>;
     /**
+     * Returns true if thec user has been to logged in based in what is in
+     * authentication in the manifest
+     */
+    isLoggedIn(): Promise<boolean>;
+    /**
      * Callback method to return search results on `/search`
      *
      * @remarks This method must be set for the plugin to show on the
@@ -109,6 +114,12 @@ declare global {
     onGetUserPlaylists?(
       request: UserPlaylistRequest
     ): Promise<SearchPlaylistResult>;
+    /**
+     * Callback method that gets a user's subscribed channels.
+     */
+    onGetUserChannels(
+      request: UserChannelRequest
+    ): Promise<SearchChannelResult>;
     /**
      * Callback method that gets a playlist's videos.  Used on `/plugins/:pluginId/playlists/:apiId`
      */
@@ -159,9 +170,17 @@ declare global {
     /**
      * Callback method that takes a query and returns search suggestions
      */
-    onGetSearchSuggestions(
+    onGetSearchSuggestions?(
       request: GetSearchSuggestionsRequest
     ): Promise<string[]>;
+    /**
+     * Callback method that is called after the user has logged in
+     */
+    onPostLogin?(): Promise<void>;
+    /**
+     * Callback method that is called after the user has logged out
+     */
+    onPostLogout?(): Promise<void>;
   }
 
   interface SearchAllResult {
@@ -348,6 +367,10 @@ declare global {
   }
 
   interface UserPlaylistRequest {
+    pageInfo?: PageInfo;
+  }
+
+  interface UserChannelRequest {
     pageInfo?: PageInfo;
   }
 
@@ -571,11 +594,21 @@ declare global {
     player?: string;
     updateUrl?: string;
     homepage?: string;
+    authentication?: ManifestAuthentication;
   }
 
   interface ManifestOptions {
     page: string;
     sameOrigin?: boolean;
+  }
+
+  interface ManifestAuthentication {
+    loginUrl: string;
+    cookiesToFind?: string[];
+    loginButton?: string;
+    headersToFind?: string[];
+    domainHeadersToFind: Record<string, string[]>;
+    completionUrl?: string;
   }
 }
 
