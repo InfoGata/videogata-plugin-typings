@@ -341,7 +341,7 @@ ___
 
 ### onGetUserChannels
 
-▸ **onGetUserChannels**(`request`): `Promise`<[`SearchChannelResult`](SearchChannelResult.md)\>
+▸ `Optional` **onGetUserChannels**(`request`): `Promise`<[`SearchChannelResult`](SearchChannelResult.md)\>
 
 Callback method that gets a user's subscribed channels.
 

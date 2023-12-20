@@ -117,7 +117,7 @@ declare global {
     /**
      * Callback method that gets a user's subscribed channels.
      */
-    onGetUserChannels(
+    onGetUserChannels?(
       request: UserChannelRequest
     ): Promise<SearchChannelResult>;
     /**
