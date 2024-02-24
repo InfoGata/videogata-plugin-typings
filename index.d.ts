@@ -69,6 +69,10 @@ declare global {
      */
     isLoggedIn(): Promise<boolean>;
     /**
+     * Returns the user's current theme
+     */
+    getTheme(): Promise<Theme>;
+    /**
      * Callback method to return search results on `/search`
      *
      * @remarks This method must be set for the plugin to show on the
@@ -181,6 +185,10 @@ declare global {
      * Callback method that is called after the user has logged out
      */
     onPostLogout?(): Promise<void>;
+    /**
+     * Callback method that is called after a users changes theme
+     */
+    onChangeTheme(theme: Theme): Promise<void>;
   }
 
   interface SearchAllResult {
@@ -610,6 +618,8 @@ declare global {
     domainHeadersToFind: Record<string, string[]>;
     completionUrl?: string;
   }
+
+  export type Theme = "dark" | "light" | "system";
 }
 
 export {};
