@@ -619,7 +619,7 @@ declare global {
     completionUrl?: string;
   }
 
-  export type Theme = "dark" | "light" | "system";
+  type Theme = "dark" | "light" | "system";
 }
 
 export {};
