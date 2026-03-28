@@ -16,4 +16,4 @@ In https://www.videogata.com/plugins click the button `LOAD PLUGIN FROM URL` and
 
 It is possible to link directly to a plugin from videogata:
 
-https&#65279;://www&#46;videogata&#46;com/plugininstall?manifestUrl={url}
+https&#65279;://www&#46;videogata&#46;com/plugininstall?manifestUrl=\{url\}

@@ -1,19 +1,13 @@
----
-id: "FilterOption"
-title: "Interface: FilterOption"
-sidebar_label: "FilterOption"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: FilterOption
 
 ## Properties
 
 ### displayName
 
-• **displayName**: `string`
+> **displayName**: `string`
 
-___
+***
 
 ### value
 
-• **value**: `string`
+> **value**: `string`

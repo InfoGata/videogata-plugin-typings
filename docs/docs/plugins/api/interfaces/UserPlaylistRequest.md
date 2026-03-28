@@ -1,13 +1,7 @@
----
-id: "UserPlaylistRequest"
-title: "Interface: UserPlaylistRequest"
-sidebar_label: "UserPlaylistRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: UserPlaylistRequest
 
 ## Properties
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

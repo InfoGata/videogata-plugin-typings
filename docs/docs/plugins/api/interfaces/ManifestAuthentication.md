@@ -1,43 +1,37 @@
----
-id: "ManifestAuthentication"
-title: "Interface: ManifestAuthentication"
-sidebar_label: "ManifestAuthentication"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: ManifestAuthentication
 
 ## Properties
 
-### completionUrl
+### completionUrl?
 
-• `Optional` **completionUrl**: `string`
+> `optional` **completionUrl?**: `string`
 
-___
+***
 
-### cookiesToFind
+### cookiesToFind?
 
-• `Optional` **cookiesToFind**: `string`[]
+> `optional` **cookiesToFind?**: `string`[]
 
-___
+***
 
 ### domainHeadersToFind
 
-• **domainHeadersToFind**: `Record`<`string`, `string`[]\>
+> **domainHeadersToFind**: `Record`\<`string`, `string`[]\>
 
-___
+***
 
-### headersToFind
+### headersToFind?
 
-• `Optional` **headersToFind**: `string`[]
+> `optional` **headersToFind?**: `string`[]
 
-___
+***
 
-### loginButton
+### loginButton?
 
-• `Optional` **loginButton**: `string`
+> `optional` **loginButton?**: `string`
 
-___
+***
 
 ### loginUrl
 
-• **loginUrl**: `string`
+> **loginUrl**: `string`

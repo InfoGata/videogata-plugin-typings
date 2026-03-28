@@ -1,23 +1,17 @@
----
-id: "VideoSource"
-title: "Interface: VideoSource"
-sidebar_label: "VideoSource"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: VideoSource
 
 ## Properties
 
 ### source
 
-• **source**: `string`
+> **source**: `string`
 
 Url of video
 
-___
+***
 
 ### type
 
-• **type**: `string`
+> **type**: `string`
 
 Type of video. For example `video/mp4`

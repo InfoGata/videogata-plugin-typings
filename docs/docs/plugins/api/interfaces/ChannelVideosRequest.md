@@ -1,21 +1,15 @@
----
-id: "ChannelVideosRequest"
-title: "Interface: ChannelVideosRequest"
-sidebar_label: "ChannelVideosRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: ChannelVideosRequest
 
 ## Properties
 
-### apiId
+### apiId?
 
-• `Optional` **apiId**: `string`
+> `optional` **apiId?**: `string`
 
 Id from third party service this was retrieved from.
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

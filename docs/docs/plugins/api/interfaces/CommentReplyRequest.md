@@ -1,25 +1,19 @@
----
-id: "CommentReplyRequest"
-title: "Interface: CommentReplyRequest"
-sidebar_label: "CommentReplyRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: CommentReplyRequest
 
 ## Properties
 
 ### commentApiId
 
-• **commentApiId**: `string`
+> **commentApiId**: `string`
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
-___
+***
 
-### videoApiId
+### videoApiId?
 
-• `Optional` **videoApiId**: `string`
+> `optional` **videoApiId?**: `string`

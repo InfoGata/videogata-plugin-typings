@@ -1,49 +1,41 @@
----
-id: "PlaylistVideosResult"
-title: "Interface: PlaylistVideosResult"
-sidebar_label: "PlaylistVideosResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: PlaylistVideosResult
 
-## Hierarchy
+## Extends
 
 - [`SearchVideoResult`](SearchVideoResult.md)
 
-  ↳ **`PlaylistVideosResult`**
-
 ## Properties
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[filterInfo](SearchVideoResult.md#filterinfo)
+[`SearchVideoResult`](SearchVideoResult.md).[`filterInfo`](SearchVideoResult.md#filterinfo)
 
-___
+***
 
 ### items
 
-• **items**: [`Video`](Video.md)[]
+> **items**: [`Video`](Video.md)[]
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[items](SearchVideoResult.md#items)
+[`SearchVideoResult`](SearchVideoResult.md).[`items`](SearchVideoResult.md#items)
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[pageInfo](SearchVideoResult.md#pageinfo)
+[`SearchVideoResult`](SearchVideoResult.md).[`pageInfo`](SearchVideoResult.md#pageinfo)
 
-___
+***
 
-### playlist
+### playlist?
 
-• `Optional` **playlist**: [`PlaylistInfo`](PlaylistInfo.md)
+> `optional` **playlist?**: [`PlaylistInfo`](PlaylistInfo.md)

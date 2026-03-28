@@ -1,13 +1,7 @@
----
-id: "UserChannelRequest"
-title: "Interface: UserChannelRequest"
-sidebar_label: "UserChannelRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: UserChannelRequest
 
 ## Properties
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

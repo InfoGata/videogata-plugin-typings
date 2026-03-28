@@ -1,19 +1,13 @@
----
-id: "VideoCommentsRequest"
-title: "Interface: VideoCommentsRequest"
-sidebar_label: "VideoCommentsRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: VideoCommentsRequest
 
 ## Properties
 
-### apiId
+### apiId?
 
-• `Optional` **apiId**: `string`
+> `optional` **apiId?**: `string`
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

@@ -1,90 +1,84 @@
----
-id: "PluginInfo"
-title: "Interface: PluginInfo"
-sidebar_label: "PluginInfo"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: PluginInfo
 
 ## Properties
 
-### description
+### description?
 
-• `Optional` **description**: `string`
+> `optional` **description?**: `string`
 
 Description of plugin
 
-___
+***
 
-### homepage
+### homepage?
 
-• `Optional` **homepage**: `string`
+> `optional` **homepage?**: `string`
 
 URL for the plugin's home page.
 
-___
+***
 
-### id
+### id?
 
-• `Optional` **id**: `string`
+> `optional` **id?**: `string`
 
 Unique Id of Plugin
 
-___
+***
 
-### manifest
+### manifest?
 
-• `Optional` **manifest**: [`Manifest`](Manifest.md)
+> `optional` **manifest?**: [`Manifest`](Manifest.md)
 
 Plugin's manifest
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
 Name of plugin
 
-___
+***
 
-### optionsHtml
+### optionsHtml?
 
-• `Optional` **optionsHtml**: `string`
+> `optional` **optionsHtml?**: `string`
 
 Options page html code
 
-___
+***
 
-### optionsSameOrigin
+### optionsSameOrigin?
 
-• `Optional` **optionsSameOrigin**: `boolean`
+> `optional` **optionsSameOrigin?**: `boolean`
 
 Determines whether the origin of the options iframe
 should be pluginId.videogata.com or should be null.
 Setting to true may be useful for running some libraries
 on options page.
 
-___
+***
 
-### playerHtml
+### playerHtml?
 
-• `Optional` **playerHtml**: `string`
+> `optional` **playerHtml?**: `string`
 
 Player page html code
 
-___
+***
 
 ### script
 
-• **script**: `string`
+> **script**: `string`
 
 Javascript code of plugin
 
-___
+***
 
-### version
+### version?
 
-• `Optional` **version**: `string`
+> `optional` **version?**: `string`
 
 Plugin version number

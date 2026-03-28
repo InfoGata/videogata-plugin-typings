@@ -1,55 +1,47 @@
----
-id: "ChannelVideosResult"
-title: "Interface: ChannelVideosResult"
-sidebar_label: "ChannelVideosResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: ChannelVideosResult
 
-## Hierarchy
+## Extends
 
 - [`SearchVideoResult`](SearchVideoResult.md)
 
-  ↳ **`ChannelVideosResult`**
-
 ## Properties
 
-### channel
+### channel?
 
-• `Optional` **channel**: [`Channel`](Channel.md)
+> `optional` **channel?**: [`Channel`](Channel.md)
 
-___
+***
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[filterInfo](SearchVideoResult.md#filterinfo)
+[`SearchVideoResult`](SearchVideoResult.md).[`filterInfo`](SearchVideoResult.md#filterinfo)
 
-___
+***
 
-### isLive
+### isLive?
 
-• `Optional` **isLive**: `boolean`
+> `optional` **isLive?**: `boolean`
 
-___
+***
 
 ### items
 
-• **items**: [`Video`](Video.md)[]
+> **items**: [`Video`](Video.md)[]
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[items](SearchVideoResult.md#items)
+[`SearchVideoResult`](SearchVideoResult.md).[`items`](SearchVideoResult.md#items)
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
 #### Inherited from
 
-[SearchVideoResult](SearchVideoResult.md).[pageInfo](SearchVideoResult.md#pageinfo)
+[`SearchVideoResult`](SearchVideoResult.md).[`pageInfo`](SearchVideoResult.md#pageinfo)

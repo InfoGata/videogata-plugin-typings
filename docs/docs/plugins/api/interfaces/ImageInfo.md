@@ -1,27 +1,21 @@
----
-id: "ImageInfo"
-title: "Interface: ImageInfo"
-sidebar_label: "ImageInfo"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: ImageInfo
 
 ## Properties
 
-### height
+### height?
 
-• `Optional` **height**: `number`
+> `optional` **height?**: `number`
 
-___
+***
 
 ### url
 
-• **url**: `string`
+> **url**: `string`
 
 Url of image
 
-___
+***
 
-### width
+### width?
 
-• `Optional` **width**: `number`
+> `optional` **width?**: `number`

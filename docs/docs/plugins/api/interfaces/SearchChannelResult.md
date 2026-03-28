@@ -1,39 +1,31 @@
----
-id: "SearchChannelResult"
-title: "Interface: SearchChannelResult"
-sidebar_label: "SearchChannelResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: SearchChannelResult
 
-## Hierarchy
+## Extends
 
 - [`SearchResult`](SearchResult.md)
 
-  ↳ **`SearchChannelResult`**
-
 ## Properties
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
 #### Inherited from
 
-[SearchResult](SearchResult.md).[filterInfo](SearchResult.md#filterinfo)
+[`SearchResult`](SearchResult.md).[`filterInfo`](SearchResult.md#filterinfo)
 
-___
+***
 
 ### items
 
-• **items**: [`Channel`](Channel.md)[]
+> **items**: [`Channel`](Channel.md)[]
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
 #### Inherited from
 
-[SearchResult](SearchResult.md).[pageInfo](SearchResult.md#pageinfo)
+[`SearchResult`](SearchResult.md).[`pageInfo`](SearchResult.md#pageinfo)

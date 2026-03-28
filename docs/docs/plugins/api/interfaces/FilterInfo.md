@@ -1,10 +1,4 @@
----
-id: "FilterInfo"
-title: "Interface: FilterInfo"
-sidebar_label: "FilterInfo"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: FilterInfo
 
 Information used for filtering in search requests.
 
@@ -12,4 +6,4 @@ Information used for filtering in search requests.
 
 ### filters
 
-• **filters**: [`Filter`](Filter.md)[]
+> **filters**: [`Filter`](Filter.md)[]

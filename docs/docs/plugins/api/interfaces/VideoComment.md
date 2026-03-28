@@ -1,77 +1,71 @@
----
-id: "VideoComment"
-title: "Interface: VideoComment"
-sidebar_label: "VideoComment"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: VideoComment
 
 ## Properties
 
 ### apiId
 
-• **apiId**: `string`
+> **apiId**: `string`
 
 Id from third party service this VideoComment was retrieved from.
 
-___
+***
 
 ### author
 
-• **author**: `string`
+> **author**: `string`
 
 Name of author of comment
 
-___
+***
 
 ### content
 
-• **content**: `string`
+> **content**: `string`
 
 Content of comment
 
-___
+***
 
-### createdDate
+### createdDate?
 
-• `Optional` **createdDate**: `string`
+> `optional` **createdDate?**: `string`
 
 ISO 8601 string, ex. 2011-10-05T14:48:00.000Z
 
-___
+***
 
-### images
+### images?
 
-• `Optional` **images**: [`ImageInfo`](ImageInfo.md)[]
+> `optional` **images?**: [`ImageInfo`](ImageInfo.md)[]
 
 Avatar image of author
 
-___
+***
 
-### likes
+### likes?
 
-• `Optional` **likes**: `number`
+> `optional` **likes?**: `number`
 
 Number of likes on comment
 
-___
+***
 
-### replyCount
+### replyCount?
 
-• `Optional` **replyCount**: `number`
+> `optional` **replyCount?**: `number`
 
 Number of replies to this comment
 
-___
+***
 
-### replyPage
+### replyPage?
 
-• `Optional` **replyPage**: `string`
+> `optional` **replyPage?**: `string`
 
 Information passed to CommentReplyRequest.page.nextPage
 
-___
+***
 
-### videoCommentId
+### videoCommentId?
 
-• `Optional` **videoCommentId**: `string`
+> `optional` **videoCommentId?**: `string`

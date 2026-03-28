@@ -1,19 +1,13 @@
----
-id: "VideoCommentsResult"
-title: "Interface: VideoCommentsResult"
-sidebar_label: "VideoCommentsResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: VideoCommentsResult
 
 ## Properties
 
 ### comments
 
-• **comments**: [`VideoComment`](VideoComment.md)[]
+> **comments**: [`VideoComment`](VideoComment.md)[]
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

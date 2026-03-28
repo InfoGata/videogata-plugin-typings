@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require("prism-react-renderer");
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,7 +12,6 @@ const config = {
   url: "https://infogata.github.io",
   baseUrl: "/videogata-plugin-typings/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
@@ -129,12 +129,7 @@ module.exports = {
         entryPoints: ["../index.d.ts"],
         tsconfig: "../tsconfig.json",
         disableSources: true,
-        readme: "none",
-        out: "plugins/api",
-        sidebar: {
-          categoryLabel: "Plugin API",
-          position: 3,
-        },
+        out: "docs/plugins/api",
       },
     ],
   ],

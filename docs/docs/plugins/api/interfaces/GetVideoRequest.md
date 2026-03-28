@@ -1,13 +1,7 @@
----
-id: "GetVideoRequest"
-title: "Interface: GetVideoRequest"
-sidebar_label: "GetVideoRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: GetVideoRequest
 
 ## Properties
 
 ### apiId
 
-• **apiId**: `string`
+> **apiId**: `string`

@@ -1,67 +1,61 @@
----
-id: "Manifest"
-title: "Interface: Manifest"
-sidebar_label: "Manifest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: Manifest
 
 ## Properties
 
-### authentication
+### authentication?
 
-• `Optional` **authentication**: [`ManifestAuthentication`](ManifestAuthentication.md)
+> `optional` **authentication?**: [`ManifestAuthentication`](ManifestAuthentication.md)
 
-___
+***
 
-### description
+### description?
 
-• `Optional` **description**: `string`
+> `optional` **description?**: `string`
 
-___
+***
 
-### homepage
+### homepage?
 
-• `Optional` **homepage**: `string`
+> `optional` **homepage?**: `string`
 
-___
+***
 
-### id
+### id?
 
-• `Optional` **id**: `string`
+> `optional` **id?**: `string`
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-___
+***
 
-### options
+### options?
 
-• `Optional` **options**: `string` \| [`ManifestOptions`](ManifestOptions.md)
+> `optional` **options?**: `string` \| [`ManifestOptions`](ManifestOptions.md)
 
-___
+***
 
-### player
+### player?
 
-• `Optional` **player**: `string`
+> `optional` **player?**: `string`
 
-___
+***
 
 ### script
 
-• **script**: `string`
+> **script**: `string`
 
-___
+***
 
-### updateUrl
+### updateUrl?
 
-• `Optional` **updateUrl**: `string`
+> `optional` **updateUrl?**: `string`
 
-___
+***
 
-### version
+### version?
 
-• `Optional` **version**: `string`
+> `optional` **version?**: `string`

@@ -1,27 +1,21 @@
----
-id: "PlaylistVideoRequest"
-title: "Interface: PlaylistVideoRequest"
-sidebar_label: "PlaylistVideoRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: PlaylistVideoRequest
 
 ## Properties
 
-### apiId
+### apiId?
 
-• `Optional` **apiId**: `string`
+> `optional` **apiId?**: `string`
 
-___
+***
 
 ### isUserPlaylist
 
-• **isUserPlaylist**: `boolean`
+> **isUserPlaylist**: `boolean`
 
 Determine whether this a private playlist only associated with a user.
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

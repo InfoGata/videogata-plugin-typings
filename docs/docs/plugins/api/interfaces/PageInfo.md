@@ -1,47 +1,41 @@
----
-id: "PageInfo"
-title: "Interface: PageInfo"
-sidebar_label: "PageInfo"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: PageInfo
 
 ## Properties
 
-### nextPage
+### nextPage?
 
-• `Optional` **nextPage**: `string`
+> `optional` **nextPage?**: `string`
 
 Optional string containing information about next page. For example, a url to the next page.
 
-___
+***
 
 ### offset
 
-• **offset**: `number`
+> **offset**: `number`
 
 Current offset
 
-___
+***
 
-### prevPage
+### prevPage?
 
-• `Optional` **prevPage**: `string`
+> `optional` **prevPage?**: `string`
 
 Optional string containing information about previous page. For example, a url to the next page.
 
-___
+***
 
 ### resultsPerPage
 
-• **resultsPerPage**: `number`
+> **resultsPerPage**: `number`
 
 Number of results on current page
 
-___
+***
 
-### totalResults
+### totalResults?
 
-• `Optional` **totalResults**: `number`
+> `optional` **totalResults?**: `number`
 
 Total number of results returned

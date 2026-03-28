@@ -1,31 +1,25 @@
----
-id: "SearchRequest"
-title: "Interface: SearchRequest"
-sidebar_label: "SearchRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: SearchRequest
 
 ## Properties
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
 Current filters to search based on.
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
 Current page to search.
 
-___
+***
 
 ### query
 
-• **query**: `string`
+> **query**: `string`
 
 Search query used to search things like videos, channels, etc.

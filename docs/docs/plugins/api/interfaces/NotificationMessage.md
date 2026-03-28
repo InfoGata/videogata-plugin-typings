@@ -1,21 +1,15 @@
----
-id: "NotificationMessage"
-title: "Interface: NotificationMessage"
-sidebar_label: "NotificationMessage"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: NotificationMessage
 
 ## Properties
 
 ### message
 
-• **message**: `string`
+> **message**: `string`
 
 Message to show
 
-___
+***
 
-### type
+### type?
 
-• `Optional` **type**: ``"error"`` \| ``"default"`` \| ``"success"`` \| ``"warning"`` \| ``"info"``
+> `optional` **type?**: `"error"` \| `"default"` \| `"success"` \| `"warning"` \| `"info"`

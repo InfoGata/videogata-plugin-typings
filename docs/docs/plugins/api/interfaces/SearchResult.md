@@ -1,29 +1,19 @@
----
-id: "SearchResult"
-title: "Interface: SearchResult"
-sidebar_label: "SearchResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: SearchResult
 
-## Hierarchy
+## Extended by
 
-- **`SearchResult`**
-
-  ↳ [`SearchVideoResult`](SearchVideoResult.md)
-
-  ↳ [`SearchPlaylistResult`](SearchPlaylistResult.md)
-
-  ↳ [`SearchChannelResult`](SearchChannelResult.md)
+- [`SearchVideoResult`](SearchVideoResult.md)
+- [`SearchPlaylistResult`](SearchPlaylistResult.md)
+- [`SearchChannelResult`](SearchChannelResult.md)
 
 ## Properties
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)

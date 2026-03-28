@@ -1,43 +1,36 @@
----
-id: "SearchVideoResult"
-title: "Interface: SearchVideoResult"
-sidebar_label: "SearchVideoResult"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: SearchVideoResult
 
-## Hierarchy
+## Extends
 
 - [`SearchResult`](SearchResult.md)
 
-  ↳ **`SearchVideoResult`**
+## Extended by
 
-  ↳↳ [`PlaylistVideosResult`](PlaylistVideosResult.md)
-
-  ↳↳ [`ChannelVideosResult`](ChannelVideosResult.md)
+- [`PlaylistVideosResult`](PlaylistVideosResult.md)
+- [`ChannelVideosResult`](ChannelVideosResult.md)
 
 ## Properties
 
-### filterInfo
+### filterInfo?
 
-• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+> `optional` **filterInfo?**: [`FilterInfo`](FilterInfo.md)
 
 #### Inherited from
 
-[SearchResult](SearchResult.md).[filterInfo](SearchResult.md#filterinfo)
+[`SearchResult`](SearchResult.md).[`filterInfo`](SearchResult.md#filterinfo)
 
-___
+***
 
 ### items
 
-• **items**: [`Video`](Video.md)[]
+> **items**: [`Video`](Video.md)[]
 
-___
+***
 
-### pageInfo
+### pageInfo?
 
-• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+> `optional` **pageInfo?**: [`PageInfo`](PageInfo.md)
 
 #### Inherited from
 
-[SearchResult](SearchResult.md).[pageInfo](SearchResult.md#pageinfo)
+[`SearchResult`](SearchResult.md).[`pageInfo`](SearchResult.md#pageinfo)

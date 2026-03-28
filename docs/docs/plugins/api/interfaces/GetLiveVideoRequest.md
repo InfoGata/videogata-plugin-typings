@@ -1,13 +1,7 @@
----
-id: "GetLiveVideoRequest"
-title: "Interface: GetLiveVideoRequest"
-sidebar_label: "GetLiveVideoRequest"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: GetLiveVideoRequest
 
 ## Properties
 
 ### channelApiId
 
-• **channelApiId**: `string`
+> **channelApiId**: `string`

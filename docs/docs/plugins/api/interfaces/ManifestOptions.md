@@ -1,19 +1,13 @@
----
-id: "ManifestOptions"
-title: "Interface: ManifestOptions"
-sidebar_label: "ManifestOptions"
-sidebar_position: 0
-custom_edit_url: null
----
+# Interface: ManifestOptions
 
 ## Properties
 
 ### page
 
-• **page**: `string`
+> **page**: `string`
 
-___
+***
 
-### sameOrigin
+### sameOrigin?
 
-• `Optional` **sameOrigin**: `boolean`
+> `optional` **sameOrigin?**: `boolean`
