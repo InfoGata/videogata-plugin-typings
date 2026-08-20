@@ -69,6 +69,20 @@ declare global {
      */
     isLoggedIn(): Promise<boolean>;
     /**
+     * Request headers captured during this plugin's login for the domain that
+     * `host` falls under, as declared in `authentication.domainHeadersToFind`
+     * in `manifest.json`.
+     *
+     * @param host A hostname, e.g. `www.youtube.com`. It is matched against the
+     * declared domain suffixes (`.youtube.com`) the same way the app decides
+     * which requests are allowed to carry credentials.
+     *
+     * @remarks Returns an empty object when the user isn't logged in, when the
+     * platform has no login support, or when `host` falls under no domain this
+     * plugin declared.
+     */
+    getAuthHeaders(host: string): Promise<Record<string, string>>;
+    /**
      * Returns the user's current theme
      */
     getTheme(): Promise<Theme>;
@@ -124,6 +138,14 @@ declare global {
     onGetUserChannels?(
       request: UserChannelRequest
     ): Promise<SearchChannelResult>;
+    /**
+     * Callback method that gets the signed-in user's personalized feed, shown
+     * on the Home page in preference to `onGetTopItems`.
+     *
+     * @remarks Return an empty `items` array when there is no signed-in feed
+     * to show; the app then falls back to `onGetTopItems`.
+     */
+    onGetUserFeed?(request: UserFeedRequest): Promise<SearchVideoResult>;
     /**
      * Callback method that gets a playlist's videos.  Used on `/plugins/:pluginId/playlists/:apiId`
      */
@@ -379,6 +401,10 @@ declare global {
   }
 
   interface UserChannelRequest {
+    pageInfo?: PageInfo;
+  }
+
+  interface UserFeedRequest {
     pageInfo?: PageInfo;
   }
 

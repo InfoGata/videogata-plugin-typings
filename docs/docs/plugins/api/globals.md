@@ -31,6 +31,7 @@
 - [SearchResult](interfaces/SearchResult.md)
 - [SearchVideoResult](interfaces/SearchVideoResult.md)
 - [UserChannelRequest](interfaces/UserChannelRequest.md)
+- [UserFeedRequest](interfaces/UserFeedRequest.md)
 - [UserPlaylistRequest](interfaces/UserPlaylistRequest.md)
 - [Video](interfaces/Video.md)
 - [VideoComment](interfaces/VideoComment.md)

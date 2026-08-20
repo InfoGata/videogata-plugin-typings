@@ -104,6 +104,31 @@ This method must be called in order for VideoGata to determine when to go to the
 
 ***
 
+### getAuthHeaders()
+
+> **getAuthHeaders**(`domain`): `Promise`\<`Record`\<`string`, `string`\>\>
+
+Request headers captured for `domain` during this plugin's login, as
+declared in `authentication.domainHeadersToFind` in `manifest.json`.
+
+#### Parameters
+
+##### domain
+
+`string`
+
+#### Returns
+
+`Promise`\<`Record`\<`string`, `string`\>\>
+
+#### Remarks
+
+Returns an empty object when the user isn't logged in, when the
+platform has no login support, or when `domain` isn't one this plugin
+declared.
+
+***
+
 ### getCorsProxy()
 
 > **getCorsProxy**(): `Promise`\<`string` \| `undefined`\>
@@ -389,6 +414,30 @@ Callback method that gets a user's subscribed channels.
 #### Returns
 
 `Promise`\<[`SearchChannelResult`](SearchChannelResult.md)\>
+
+***
+
+### onGetUserFeed()?
+
+> `optional` **onGetUserFeed**(`request`): `Promise`\<[`SearchVideoResult`](SearchVideoResult.md)\>
+
+Callback method that gets the signed-in user's personalized feed, shown
+on the Home page in preference to `onGetTopItems`.
+
+#### Parameters
+
+##### request
+
+[`UserFeedRequest`](UserFeedRequest.md)
+
+#### Returns
+
+`Promise`\<[`SearchVideoResult`](SearchVideoResult.md)\>
+
+#### Remarks
+
+Return an empty `items` array when there is no signed-in feed
+to show; the app then falls back to `onGetTopItems`.
 
 ***
 
