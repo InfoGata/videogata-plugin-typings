@@ -339,6 +339,11 @@ declare global {
      * Id of the channel from the third party service this video came from
      */
     channelApiId?: string;
+    /**
+     * Avatar images for the channel this video came from, shown beside the
+     * title on video cards.
+     */
+    channelImages?: ImageInfo[];
     recommendedVideos?: Video[];
     /**
      * ISO 8601 string, ex. 2011-10-05T14:48:00.000Z

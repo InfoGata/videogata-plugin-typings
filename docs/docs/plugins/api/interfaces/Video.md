@@ -18,6 +18,15 @@ Id of the channel from the third party service this video came from
 
 ***
 
+### channelImages?
+
+> `optional` **channelImages?**: [`ImageInfo`](ImageInfo.md)[]
+
+Avatar images for the channel this video came from, shown beside the
+title on video cards.
+
+***
+
 ### channelName?
 
 > `optional` **channelName?**: `string`

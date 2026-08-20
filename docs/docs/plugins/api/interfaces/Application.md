@@ -106,16 +106,21 @@ This method must be called in order for VideoGata to determine when to go to the
 
 ### getAuthHeaders()
 
-> **getAuthHeaders**(`domain`): `Promise`\<`Record`\<`string`, `string`\>\>
+> **getAuthHeaders**(`host`): `Promise`\<`Record`\<`string`, `string`\>\>
 
-Request headers captured for `domain` during this plugin's login, as
-declared in `authentication.domainHeadersToFind` in `manifest.json`.
+Request headers captured during this plugin's login for the domain that
+`host` falls under, as declared in `authentication.domainHeadersToFind`
+in `manifest.json`.
 
 #### Parameters
 
-##### domain
+##### host
 
 `string`
+
+A hostname, e.g. `www.youtube.com`. It is matched against the
+declared domain suffixes (`.youtube.com`) the same way the app decides
+which requests are allowed to carry credentials.
 
 #### Returns
 
@@ -124,8 +129,8 @@ declared in `authentication.domainHeadersToFind` in `manifest.json`.
 #### Remarks
 
 Returns an empty object when the user isn't logged in, when the
-platform has no login support, or when `domain` isn't one this plugin
-declared.
+platform has no login support, or when `host` falls under no domain this
+plugin declared.
 
 ***
 
