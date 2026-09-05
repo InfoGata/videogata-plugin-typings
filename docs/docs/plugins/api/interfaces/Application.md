@@ -607,6 +607,30 @@ This method must be set for channel pagination to work on the
 
 ***
 
+### onSearchChannelVideos()?
+
+> `optional` **onSearchChannelVideos**(`request`): `Promise`\<[`SearchVideoResult`](SearchVideoResult.md)\>
+
+Callback method that searches within a single channel's videos.
+Used on `/plugins/:pluginId/channels/:apiId?q=`
+
+#### Parameters
+
+##### request
+
+[`ChannelSearchRequest`](ChannelSearchRequest.md)
+
+#### Returns
+
+`Promise`\<[`SearchVideoResult`](SearchVideoResult.md)\>
+
+#### Remarks
+
+When this method is not defined, the app does not show a search
+box on the channel page.
+
+***
+
 ### onSearchPlaylists()?
 
 > `optional` **onSearchPlaylists**(`request`): `Promise`\<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>

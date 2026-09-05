@@ -4,6 +4,7 @@
 
 - [Application](interfaces/Application.md)
 - [Channel](interfaces/Channel.md)
+- [ChannelSearchRequest](interfaces/ChannelSearchRequest.md)
 - [ChannelVideosRequest](interfaces/ChannelVideosRequest.md)
 - [ChannelVideosResult](interfaces/ChannelVideosResult.md)
 - [CommentReplyRequest](interfaces/CommentReplyRequest.md)

@@ -159,6 +159,16 @@ declare global {
       request: ChannelVideosRequest
     ): Promise<ChannelVideosResult>;
     /**
+     * Callback method that searches within a single channel's videos.
+     * Used on `/plugins/:pluginId/channels/:apiId?q=`
+     *
+     * @remarks When this method is not defined, the app does not show a search
+     * box on the channel page.
+     */
+    onSearchChannelVideos?(
+      request: ChannelSearchRequest
+    ): Promise<SearchVideoResult>;
+    /**
      * Callback method to determine whether to use video player set in manifest.json.
      * The player is used by default when it is set in manifest.json, but this method can disable it.
      */
@@ -472,6 +482,18 @@ declare global {
   interface ChannelVideosResult extends SearchVideoResult {
     channel?: Channel;
     isLive?: boolean;
+  }
+
+  interface ChannelSearchRequest {
+    /**
+     * Id from third party service this was retrieved from.
+     */
+    apiId?: string;
+    /**
+     * Query to search for within the channel.
+     */
+    query: string;
+    pageInfo?: PageInfo;
   }
 
   interface SearchChannelResult extends SearchResult {
