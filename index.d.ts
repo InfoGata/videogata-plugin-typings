@@ -394,6 +394,12 @@ declare global {
      * Url that points to third party service where to video was retrieved from
      */
     originalUrl?: string;
+    /**
+     * A stream in progress rather than a recording. VideoGata opens it through
+     * the channel's live page (`onGetLiveVideo` with `channelApiId`), so
+     * `channelApiId` must be set, and `views` is read as current viewers.
+     */
+    isLive?: boolean;
   }
 
   interface VideoSource {

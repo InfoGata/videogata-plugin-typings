@@ -73,6 +73,16 @@ Images associated with this Video
 
 ***
 
+### isLive?
+
+> `optional` **isLive?**: `boolean`
+
+A stream in progress rather than a recording. VideoGata opens it through
+the channel's live page (`onGetLiveVideo` with `channelApiId`), so
+`channelApiId` must be set, and `views` is read as current viewers.
+
+***
+
 ### likes?
 
 > `optional` **likes?**: `number`
